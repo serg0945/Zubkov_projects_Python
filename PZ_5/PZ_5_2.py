@@ -1,9 +1,13 @@
 try:  # Обработка исключений
+    count = 0
+
+
     def invertdigits(k):  # Переворачивает строку
         return int(str(k)[::-1])
 
 
-    for i in range(0, 5):  # Повторение (5 раз)
+    while count < 5:  # Повторение (5 раз)
+        count += 1
         print('Введите число k: ')
         K = int(input())
         print('Обратный порядок цифр: ', invertdigits(K))
