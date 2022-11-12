@@ -1,11 +1,11 @@
-Entry = input("Введите что-нибудь: ")
+entry = input("Введите что-нибудь: ")
 
 
-def findlen(entry):  # Считает длину строки
-    a = 0
-    for i in entry:
-        a += 1
-    return a
+def findlen(def_entry):  # Считает длину строки
+    count = 0
+    while count < len(def_entry):  
+        count += 1
+    return count
 
 
-print("Число символов в строке:", findlen(Entry))
+print("Число символов в строке:", findlen(entry))
