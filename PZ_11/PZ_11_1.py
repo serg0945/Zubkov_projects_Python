@@ -43,4 +43,4 @@ for j in range(len(read)):  # Цикл, в котором элементы nums 
     if transl[j] > 5:
         mult = transl[j] * 2
         finalfile.write(f'{transl[j]} в {mult}, ')
-finalfile.close()
+finalfile.close()  # Закрываем
