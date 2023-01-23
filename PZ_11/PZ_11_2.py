@@ -24,4 +24,4 @@ newfile = open('reload_text18-6.txt', 'w')  # Создаём новый файл
 for x in read:  # Цикл, с помощью которого все знаки пунктуации заменяются на "!" в тексте
     string = re.sub('[.,:?!]', '!', x)
     newfile.writelines(string)
-newfile.close()
+newfile.close()  # Закрываем
