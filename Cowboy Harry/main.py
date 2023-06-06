@@ -82,7 +82,7 @@ def run():
         other.track()
         other.score()
         person.output(global_vars.screen)  # Если убрать атрибут screen, то будет набор ошибок
-        person.update(keys)
+        person.update()
         cactus.update()
         cactus.output(global_vars.screen)
         bird.output(global_vars.screen)

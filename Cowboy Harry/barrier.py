@@ -8,7 +8,7 @@ class Cactus:
         self.img_list = [small_cactus_1, small_cactus_1_2, small_cactus_2, small_cactus_2_2,  small_cactus_3, small_cactus_3_2]
         self.img = self.img_list[0]
         self.rect = self.img.get_rect()  # Определение координат
-        self.rect.x = global_vars.screen_width  # Координаты по x
+        self.rect.x = global_vars.screen_width # Координаты по x
         self.rect.y = global_vars.cactus_y  # Координаты по y
 
     def update(self):

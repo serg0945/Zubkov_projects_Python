@@ -3,8 +3,6 @@ import global_vars
 
 pygame.init()
 
-keys = pygame.key.get_pressed()
-
 class Person:
 
     def __init__(self):
@@ -22,8 +20,9 @@ class Person:
         self.person_jump = False
         self.person_attraction = False
 
-    def update(self, keys):  # Главная функция взаимодействия пользователя с горячими клавишами
+    def update(self):  # Главная функция взаимодействия пользователя с клавишами
 
+        keys = pygame.key.get_pressed()
         if keys[pygame.K_UP] or keys[pygame.K_SPACE]:  # Прыжок
             self.person_attraction = False
             self.person_run = False
@@ -81,7 +80,7 @@ class Person:
         self.image = self.shoot_img[self.img_count // 4]
         self.img_count += 1
 
-        if self.img_count == 8:  # Анимация бега
+        if self.img_count == 8:  # Анимация бега во время стрельбы
             self.img_count = 0
 
     def output(self, screen):
